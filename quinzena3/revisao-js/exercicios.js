@@ -59,7 +59,7 @@ function retornaExpressoesBooleanas() {
 function retornaNNumerosPares(n) {
   const arrayPares = []
   const numero = 0
-   
+
   for(var i = 0; i < n;i++){
       arrayPares.push(numero + (2 * i)) 
   }
@@ -69,9 +69,10 @@ function retornaNNumerosPares(n) {
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+
+  if(a !== b &&  a !== c && b !== c)  return 'Escaleno'
+  else if(a === b && a === c) return 'Equilátero'
+  else return 'Isósceles'
 }
 
 // EXERCÍCIO 09
