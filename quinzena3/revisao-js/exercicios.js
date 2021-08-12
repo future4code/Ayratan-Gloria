@@ -57,8 +57,15 @@ function retornaExpressoesBooleanas() {
 
 // EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+  const arrayPares = []
+  const numero = 0
+   
+  for(var i = 0; i < n;i++){
+      arrayPares.push(numero + (2 * i)) 
+  }
+  return arrayPares
 }
+
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
