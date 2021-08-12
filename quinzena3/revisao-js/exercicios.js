@@ -26,7 +26,11 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
-
+  let maior = array[0]
+  for(var i = 0; i < array.length; i++){
+      if(array[i] > maior) maior = array[i]
+  }
+  return maior
 }
 
 // EXERCÍCIO 05
