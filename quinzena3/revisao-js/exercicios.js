@@ -1,24 +1,27 @@
 // EXERCÍCIO 01
 function inverteArray(array) {
-  var novoArrayInvertido = array.map((item,indice,array) => {
-    return array[array.length - indice - 1]
+  const novoArrayInvertido = array.map((item,indice,array) => {
+      return array[array.length - indice - 1]
   })
   return novoArrayInvertido
 }
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-  const novoArrayParesElevados = array.filter((item,indice, array) => {
-    if(item % 2 === 0) return item 
-  }).map((item) => {
-    return item * item
+  const novoArrayParesElevados = array.filter((item) => {
+      if(item % 2 === 0)  return item 
+        }).map((item) => {
+            return item * item
   })
   return novoArrayParesElevados
 }
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
-
+  const novoArrayPares = array.filter((item) => {
+      if(item % 2 === 0) return item 
+  })
+  return novoArrayPares
 }
 
 // EXERCÍCIO 04
