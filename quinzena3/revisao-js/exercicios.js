@@ -8,7 +8,12 @@ function inverteArray(array) {
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-
+  const novoArrayParesElevados = array.filter((item,indice, array) => {
+    if(item % 2 === 0) return item 
+  }).map((item) => {
+    return item * item
+  })
+  return novoArrayParesElevados
 }
 
 // EXERCÍCIO 03
