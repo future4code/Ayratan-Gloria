@@ -98,18 +98,52 @@ function comparaDoisNumeros(num1, num2) {
 
   objeto.diferenca = objeto.maiorNumero - menor
  
-
  return objeto
 }
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
+  let menor = Infinity
+  let maior = -Infinity
+  let segundoMenor = Infinity
+  let segundoMaior = -Infinity
+  let novoArray = []
 
+  for (let i of array) {
+    if (i < menor) {
+      menor = i
+    }
+    if (i > maior) {
+      maior = i
+    }
+  }
+
+  for (let i of array) {
+    if (i < segundoMenor && i !== menor) {
+      segundoMenor = i
+    }
+    if (i > segundoMaior && i !== maior) {
+      segundoMaior = i
+    }
+  }
+  novoArray.push(segundoMaior)
+  novoArray.push(segundoMenor)
+
+  return novoArray
 }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
-
+  for(let i = 0; i < array.length; i++){
+    for(let j = 0; i < array.length; i++){
+      if(array[i] > array[j]){
+        let primeiroTemporario = array[i]
+        array[j] = array[j+1]
+        array[j+1] = primeiroTemporario
+       }
+    }
+  }
+   return array
 }
 
 // EXERCÍCIO 12
