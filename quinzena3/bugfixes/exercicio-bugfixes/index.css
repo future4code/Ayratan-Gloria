@@ -34,9 +34,7 @@ div>p:first-child {
  
 }
 
-div img {
-  
-}
+
 
 .botao-amarelo {
     background-color: #ffaf43;
@@ -137,6 +135,11 @@ td button:active{
 .container-do-search {
     margin-top: 20px;
     height: 100px;
+}
+
+#searchInput {
+    border: none;
+    border-bottom: 1px solid black;
 }
 
 #div-botao {
