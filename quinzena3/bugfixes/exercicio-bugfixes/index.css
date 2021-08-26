@@ -30,7 +30,8 @@ img {
 }
 
 div>p:first-child {
-    padding: 10% 0;
+    padding-top: 5%;
+ 
 }
 
 div img {
@@ -70,6 +71,12 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white;
+}
+
+#container-de-descricao>p{
+    width: 10%;
+    position: relative;
+    margin: 0 auto;
 }
 
 #container-de-descricao>ol {
