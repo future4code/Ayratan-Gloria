@@ -96,8 +96,6 @@ div>p:first-child {
 }
 
 
-
-
 /**
   *
   *  ESTILOS COMPRAR 
@@ -140,6 +138,7 @@ td button:active{
 #searchInput {
     border: none;
     border-bottom: 1px solid black;
+    padding: 5px;
 }
 
 #div-botao {
